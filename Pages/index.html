@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un rendez-vous</title>
+    <link rel="stylesheet" href="../CSS/fichier.css">
+</head>
+<body>
+        <div class="bloc-image">
+            <div class="formulaire">
+                <form action="ajout.php" method="post">
+                    <label for="nom">Nom Entreprise :</label>
+                    <select name="nom">
+                        <option value="1"></option>
+                        <option value="INOV-CAMEROUN">INOV-CAMEROUN</option>
+                        <option value="CAMTEL">CAMTEL</option>
+                        <option value="AFRILAND FIRST BANK">AFRILAND FIRST BANK</option>
+                        <option value="SONARA">SONARA</option>
+                        <option value="CIMENCAM">CIMENCAM</option>
+                    </select>
+                    <label for="date">Date :</label>
+                    <input type="date" id="dates" name="dates" required>
+
+                    <label for="heure">Heure :</label>
+                    <input type="time" id="heure" name="heure" required>
+
+                    <label for="objet">objet :</label>
+                    <input type="text" id="objet" name="objet" required>
+
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+
+            <div class="titre">
+                <h1>AJOUTEZ UN<br>RENDEZ-VOUS</h1>
+            </div>
+        </div>
+</body>
+</html>
