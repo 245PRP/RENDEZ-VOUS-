@@ -1,0 +1,127 @@
+/* couler a utiliser 
+sable dore :  #d6a77a
+marron clair: #a1744d
+blanc cassé:  #fefdfc */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code SemiBold';
+    outline: none;
+}
+
+.super-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),url(../Images/v2.jpg)center center no-repeat;
+    background-size: cover;
+} 
+
+header {
+    text-align: center;
+    padding: 1rem;
+ }
+ 
+ header img {
+    min-width: 190px;
+     width: 100px;
+     height: 100px;
+ }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    /* border: 1px solid white; */
+}
+
+.wrapper .container {
+    width: 360px;
+    padding: 20px;
+    background-color: rgb(255 255 255 /35%); 
+    
+}
+
+
+.form-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 20px 0;
+    font-size: 1.1rem;
+    color: white;
+    box-shadow: 2px 3px 8px black;
+    border-radius: 50px;
+}
+
+.form-header .connexion {
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form-header .connexion.active {
+    box-shadow: inset 1px 1px 4px white;
+    border-color: white;
+    transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+
+.form-body {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+
+form {
+    flex: 0 0 100%;
+}
+
+
+
+
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(135 255 249 /65%);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: #d6a77A;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #f8f3ec;
+}
+
+button {
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #a1744d;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    box-shadow: 3px 5px 15px #d6a77A;
+    transform: translateY(-5px);
+}
