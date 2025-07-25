@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un rendez-vous</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="bloc-image">
+            <div class="formulaire">
+                <form action="ajout.php" method="post">
+                    <label for="nom">Nom Entreprise :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="heure">Heure :</label>
+                    <input type="time" id="heure" name="heure" required>
+
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+
+            <div class="titre">
+                <h1>AJOUTEZ UN<br>RENDEZ-VOUS</h1>
+            </div>
+        </div>
+</body>
+</html>
