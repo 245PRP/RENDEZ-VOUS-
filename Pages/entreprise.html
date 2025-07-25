@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
+    <title>Dashboard Entreprise</title>
+    <link rel="stylesheet" href="entreprise.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/Logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <div class="title">
+                <a href="#">Tableau de bord</a>
+            </div>
+            <div class="date">
+                <p id="date">lundi le 21 juillet 2025</p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="recherche">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input type="text" class="search" placeholder="Rechercher...">
+            </div>
+            <div class="notification">
+                <span class="material-symbols-outlined">notifications</span>
+                <div class="alerte"></div>
+            </div>
+            <div class="nom-entreprise">
+                <span>Inov Cameroun</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="main-sidebar">
+            <div class="sidebar">
+                <ul class="list-item">
+                    <li class="items">
+                        <a href="#" class="active">
+                            <span class="material-symbols-outlined">home</span>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            <span>Gestion des Créneaux</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">edit_calendar</span>
+                            <span> Rendez-vous</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">history</span>
+                            <span>Historiques</span> 
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">bar_chart</span>
+                            <span>Statistique</span> 
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">settings</span>
+                            <span>Configuration</span> 
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">notifications_active</span>
+                            <span>Notification</span> 
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <span class="material-symbols-outlined">logout</span>
+                            <span>Déconnexion</span>
+                        </a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div class="main-container">
+            <section class="statistique">
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span>rendez-vous aujourd'hui</span>
+                            <div class="icones-container">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span>12</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="poucentage">+8%</span>
+                            <span>vs hier</span>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span>Revenus du mois</span>
+                            <div class="icones-container2">
+                                <span class="material-symbols-outlined">attach_money</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span>500 000 FCFA</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="poucentage">+15%</span>
+                            <span>vs Mois dernier</span>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span>Taux de Présence</span>
+                            <div class="icones-container3">
+                                <span class="material-symbols-outlined">circle</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span>94%</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="poucentage">+2%</span>
+                            <span>vs semaine dernier</span>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span>Nouveaux Clients</span>
+                            <div class="icones-container4">
+                                <span class="material-symbols-outlined">person_add</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span>8</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="poucentage2">-25%</span>
+                            <span>vs Semaine dernier</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="raccoucir">
+                <div class="rendezvous">
+                    <div class="ro-title">
+                        <h2 class="recent-orders-titles">Transactions Récentes</h2>
+                        <a href="#" class="show-all">Voir plus</a>
+                    </div>
+
+                    <div class="ro-body1">
+                        <div class="nom">
+                            <span>Foukeng kemayou</span>
+                        </div>
+
+                        <div class="details">
+                            <div class="heures">
+                                <span>14:30</span>
+                            </div>
+                            <div class="confirm">
+                                <span class="confimation">confirmer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ro-body2">
+                        <div class="nom">
+                            <span>Foukeng kemayou</span>
+                        </div>
+
+                        <div class="details">
+                            <div class="heures">
+                                <span>15:50</span>
+                            </div>
+                            <div class="confirm">
+                                <span class="confimation">En attente</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ro-body3">
+                        <div class="nom">
+                            <span>Foukeng kemayou</span>
+                        </div>
+
+                        <div class="details">
+                            <div class="heures">
+                                <span>16:40</span>
+                            </div>
+                            <div class="confirm">
+                                <span class="confimation">Confirmer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ro-body4">
+                        <div class="nom">
+                            <span>Foukeng kemayou</span>
+                        </div>
+
+                        <div class="details">
+                            <div class="heures">
+                                <span>18:30</span>
+                            </div>
+                            <div class="confirm">
+                                <span class="confimation">Nouveau</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <table>
+                        <tbody>
+                            <tr>
+                                <td>Jean Dupont</td>
+                                <td class="text-cyan">Réussi</td>
+                            </tr>
+                            <tr>
+                                <td>Lisa Martin</td>
+                                <td>Retrait</td>
+                                <td>€800</td>
+                                <td>2025-04-01</td>
+                                <td class="text-fuschia">En attente</td>
+                            </tr>
+                            <tr>
+                                <td>Paul Moreau</td>
+                                <td>Prêt</td>
+                                <td>€15 000</td>
+                                <td>2025-03-31</td>
+                                <td class="text-cyan">Approuvé</td>
+                            </tr>
+                            <tr>
+                                <td>Sophie Lefevre</td>
+                                <td>Dépôt</td>
+                                <td>€3 000</td>
+                                <td>2025-03-30</td>
+                                <td class="text-cyan">Réussi</td>
+                            </tr>
+                            <tr>
+                                <td>Lucien Durand</td>
+                                <td>Retrait</td>
+                                <td>€500</td>
+                                <td>2025-03-29</td>
+                                <td class="text-fuschia">En attente</td>
+                            </tr>
+                        </tbod>
+                    </table> -->
+                </div>
+
+                <div class="action-rapide">
+                    <div class="action-rapide__title">
+                        <div class="debut">
+                            <h2>Action Rapides</h2>
+                        </div>
+
+                        <div class="les-actions active">
+                            <div class="icone-containers">
+                                <span class="material-symbols-outlined">add</span>
+                            </div>
+
+                            <span>Nouveaux Clients</span>
+                        </div>
+                        <div class="les-actions1">
+                            <div class="icone-containers2">
+                                <span class="material-symbols-outlined">calendar_month</span>
+                            </div>
+
+                            <span>Voir le Calendrier</span>
+                        </div>
+                        <div class="les-actions1">
+                            <div class="icone-containers3">
+                                <span class="material-symbols-outlined">checkbook</span>
+                            </div>
+
+                            <span>Générer rapport</span>
+                        </div>
+                        <div class="les-actions1">
+                            <div class="icone-containers4">
+                                <span class="material-symbols-outlined">settings</span>
+                            </div>
+
+                            <span>Paramètres</span>
+                        </div>
+                    </div>
+
+                    <div class="notifications">
+                        <h4>Notifications Récentes</h4>
+
+                        <ul>
+                            <li><span class="notification-dot" style="background-color: #007bff;"></span> Nouveaux rendez-vous</li>
+                            <li><span class="notification-dot" style="background-color: #28a745;"></span> Paiement reçu</li>
+                            <li><span class="notification-dot" style="background-color: #ffc107;"></span> Rappel envoyé</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="entreprise.js"></script>
+</body>
+</html>
