@@ -1,0 +1,71 @@
+body {
+    background: url("../Images/v2.jpg");
+    background-size: cover;
+
+}
+.bloc-image {
+    display: flex;
+    width: 80%;
+    margin: 400px auto;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.bloc-image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 200%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.formulaire {
+    width: 250px;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 1;
+    color: white;
+    margin: 0 50px;
+    border-radius: 9px;
+}
+
+.formulaire label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulaire input {
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulaire button {
+    width: 80%;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    margin: 5px 25px;
+}
+
+.titre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+}
