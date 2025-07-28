@@ -1,31 +1,29 @@
 <?php
-//connexion à la base de donnée
-try {
-    $cnx= new PDO("mysql:host=localhost;dbname=rendez-vous","root","");
-}
-catch(PDOException $e){
-    echo"Erreur de connexion à la base de donnée veuillez réesayer plutard:".$e->getMessage();
-}
-// ajouter un produit
-if(isset($_POST['nom'])&& isset($_POST['dates'])&& isset($_POST['heure'])&& isset($_POST['objet'])){
-    $nom=$_POST['nom'];
-    $dates=$_POST['dates'];
-    $heures=$_POST['heure'];
-    $objet=$_POST['objet'];
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-    try {
-        $stmt=$cnx->prepare('INSERT INTO reserver(nom, dates,heures,objet)VALUES (:nom, :dates, :heure, :objet)');
-        $stmt->bindParam(':nom', $nom);
-        $stmt->bindParam(':dates', $dates);
-        $stmt->bindParam(':heure', $heures);
-        $stmt->bindParam(':objet', $objet);
-        $stmt->execute();
-        header('Location:afficher.php');
-    } catch (PDOException $e) {
-        echo"Erreur d'insertion des produits à la base de donnée".$e->getMessage();
+try {
+    $conn = new PDO("mysql:host=localhost;dbname=rendez-vous", "root", "");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    if (isset($_POST['Nom'], $_POST['dates'], $_POST['heure'], $_POST['objet'])) {
+        $nom = $_POST['Nom'];
+        $date = $_POST['dates'];
+        $heure = $_POST['heure'];
+        $objet = $_POST['objet'];
+
+        $stmt = $conn->prepare("INSERT INTO reserver (nom, dates, heures, objet) VALUES (?, ?, ?, ?)");
+        if ($stmt->execute([$nom, $date, $heure, $objet])) {
+            header("Location: afficher.php");
+            exit();
+        } else {
+            echo "Erreur lors de l'insertion.";
+        }
+    } else {
+        echo "Tous les champs sont requis.";
     }
 
+} catch (PDOException $e) {
+    echo "Erreur : " . $e->getMessage();
 }
-
-
 ?>

@@ -35,9 +35,9 @@ img {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 30%;
+    max-width: 500px;
+    margin: 20px;
     color: #000;
 }
 

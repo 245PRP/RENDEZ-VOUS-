@@ -1,61 +1,72 @@
-body{
-background-image: url(WhatsApp\ Image\ 2025-07-22\ à\ 17.02.50_c1434ec8.jpg);
-background-size: cover;
-  margin: 0;
+body {
+    margin: 0;
     padding: 0;
-    height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/v2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 30px;
-
-}
-.ror{
-
- padding: 30px;
- border: 200px;
- border-radius: 100px;
- box-shadow: 10 0 10px;
- width: 350px;
- margin-top: 600px;
- margin-left: -160px;
-  
-}
-button{
-    width: 90px;
-padding: 10px;
-background-color: rgb(52, 53, 53);
-color: rgb(226, 224, 224);
-border: 60px;
-border-radius: 10px;
-margin-left: 270px;
-height: 30px;
-
-margin-top: 40px;
-text-align: center;
-justify-content:center;
-align-items: center;
-}
-form input{
-    width: 600px;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 70px ;
-    border-radius: 30px;
-}
-h1{
     align-items: center;
     justify-content: center;
+}
+
+.ror {
+    background: rgba(0, 0, 0, 0.5); /* noir semi-transparent */
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.ror h1 {
     text-align: center;
-    margin-top: 10px;
-    margin-left:240px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
-.un{
-    width: 600px;
+
+.ror label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #ffffff;
 }
-select{
-    border: 5px;
-    border-radius: 30px;
-    width: 615px;
-    height: 32px;
+
+.ror input,
+.ror select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-size: 14px;
+    outline: none;
+}
+
+.ror input::placeholder {
+    color: #ddd;
+}
+
+.ror button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ror button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
 }

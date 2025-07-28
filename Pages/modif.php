@@ -46,6 +46,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <title>Modifier</title>
+
 </head>
 <body>
     <h2>Modifier le produit</h2>

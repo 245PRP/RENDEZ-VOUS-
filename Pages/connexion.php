@@ -4,7 +4,7 @@ session_start();
 // Redirection si déjà connecté
 if (isset($_SESSION['user']['statut'])) {
     if ($_SESSION['user']['statut'] === 'client') {
-        header("Location: Acueill.php");
+        header("Location: Acceuil.html");
         exit();
     } elseif ($_SESSION['user']['statut'] === 'entreprise') {
         header("Location: accueil_entreprise.php");
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Vérification utilisateur trouvé
         if ($user && password_verify($motdepasse, $user['password'])) {
             $_SESSION['user'] = [
-                'id' => $user['idPrimaire'], // ✅ Nom correct de la colonne
+                'id' => $user['idPrimaire'], 
                 'nom' => $user['nom'],
                 'email' => $user['email'],
                 'statut' => $user['statut']
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Redirection selon le statut
             if ($user['statut'] === 'client') {
-                header("Location: Acueill");
+                header("Location: Acceuil.html");
                 exit();
             } elseif ($user['statut'] === 'entreprise') {
                 header("Location: accueil_entreprise.php");

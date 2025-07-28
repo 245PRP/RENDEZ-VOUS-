@@ -70,10 +70,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         'statut' => $user['statut']
                     ];
                     if ($statut === "client") {
-                        header("Location: Acueill.php");
+                        header("Location: Acceuil.html ");
                         exit();
                     } elseif ($statut === "entreprise") {
-                        header("Location: accueil_entreprise.php");
+                        header("Location: entreprise.html");
                         exit();
                     }
                 }
